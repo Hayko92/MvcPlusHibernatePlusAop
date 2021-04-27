@@ -1,0 +1,8 @@
+# Default ignored files
+/shelf/
+/workspace.xml
+# Datasource local storage ignored files
+/../../../../../../../../../:\Users\Hayk\Downloads\maven-archetype-3.2.0-source-release\maven-archetype-3.2.0\archetype-samples\MvcPlusHibernatePlusAop\.idea/dataSources/
+/dataSources.local.xml
+# Editor-based HTTP Client requests
+/httpRequests/
