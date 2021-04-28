@@ -12,6 +12,13 @@ import java.util.List;
 public class EmployeeServiceImpl  implements EmployeeService{
     @Autowired
     private EmployeeDAO employeeDAO;
+
+    @Override
+    @Transactional
+    public Employee getEmployee(int id) {
+      return   employeeDAO.getEmployee(id);
+    }
+
     @Override
     @Transactional
     public List<Employee> getAllEmployees() {
@@ -23,5 +30,11 @@ public class EmployeeServiceImpl  implements EmployeeService{
     @Transactional
     public void saveEmployee(Employee employee) {
         employeeDAO.saveEmployee(employee);
+    }
+
+    @Override
+    @Transactional
+    public void deleteEmployee(int id) {
+        employeeDAO.deleteEmployee(id);
     }
 }
